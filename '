@@ -1,0 +1,29 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  background: url('./assets/bg-mobile.jpg') no-repeat top center/cover;
+}
+
+#container {
+  width: 36rem;
+  height: 71.2rem;
+  margin: auto;
+}
+
+#profile img {
+  display: block;
+  margin: auto;
+  width: 11.2rem;
+  border-radius: 100%;
+  border: 3px solid gray;
+}
+
