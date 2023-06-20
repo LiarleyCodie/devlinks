@@ -44,6 +44,16 @@ body {
   width: 36rem;
   margin: auto;
   padding: 5.6rem 2.4rem 0;
+  transition-property: filter, opacity, visibility, transform;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+}
+
+.filtered {
+  filter: blur(1rem);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
 }
 
 #profile {
@@ -82,7 +92,8 @@ ul li a {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 0.8rem;
-  transition: background 200ms, border-color 200ms;
+  transition-property: background, border-color;
+  transition-duration: 200ms;
   backdrop-filter: blur(0.4rem);
   -webkit-backdrop-filter: blur(0.4rem);
   font-weight: 500;
